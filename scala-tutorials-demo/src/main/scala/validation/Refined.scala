@@ -4,7 +4,7 @@ package validation
 import cats.implicits._
 import cats.effect.{IO, IOApp}
 import eu.timepit.refined.api.RefType.refinedRefType
-import eu.timepit.refined.api.{Refined, RefinedTypeOps}
+import eu.timepit.refined.api.{RefinedTypeOps}
 import eu.timepit.refined.auto._
 import eu.timepit.refined.types.string.NonEmptyString
 
@@ -30,5 +30,6 @@ object Refined extends IOApp.Simple {
      """
 
   override def run: IO[Unit] = IO.println(showSong("Acme Band", "Happy Day", "Songs About Life"))
+//  override def run: IO[Unit] = IO.println(showSong("", "Happy Day", "Songs About Life")) // COMPILE time exception
 
 }
