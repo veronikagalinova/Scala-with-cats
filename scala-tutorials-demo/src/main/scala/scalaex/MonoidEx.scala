@@ -5,7 +5,7 @@ import cats.Monoid
 import cats.effect.{IO, IOApp}
 import cats.implicits.toFoldableOps
 
-/* https://www.scala-exercises.org/cats/semigroup
+/* https://www.scala-exercises.org/cats/monoid
 
   Monoid extends the Semigroup type class, adding an empty method to semigroup's combine.
   (combine(x, empty) == combine(empty, x) == x)
